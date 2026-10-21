@@ -36,7 +36,12 @@ export function BarChart({
   const barW = Math.min(28, (groupW * 0.7) / series.length);
 
   return (
-    <svg viewBox={`0 0 ${W} ${height}`} className="chart" role="img">
+    <svg
+      viewBox={`0 0 ${W} ${height}`}
+      className="chart"
+      role="img"
+      direction="ltr"
+    >
       {[0, 0.25, 0.5, 0.75, 1].map((t) => {
         const y = PAD.t + plotH * (1 - t);
         return (
@@ -48,7 +53,13 @@ export function BarChart({
               y2={y}
               className="grid"
             />
-            <text x={PAD.l - 8} y={y + 4} className="axis" textAnchor="end">
+            <text
+              x={PAD.l - 8}
+              y={y + 4}
+              className="axis"
+              textAnchor="end"
+              direction="ltr"
+            >
               {formatNum(yMax * t)}
               {suffix}
             </text>
@@ -114,7 +125,12 @@ export function LineChart({
   const yAt = (v: number) => PAD.t + plotH * (1 - v / yMax);
 
   return (
-    <svg viewBox={`0 0 ${W} ${height}`} className="chart" role="img">
+    <svg
+      viewBox={`0 0 ${W} ${height}`}
+      className="chart"
+      role="img"
+      direction="ltr"
+    >
       {[0, 0.25, 0.5, 0.75, 1].map((t) => {
         const y = PAD.t + plotH * (1 - t);
         return (
@@ -126,7 +142,13 @@ export function LineChart({
               y2={y}
               className="grid"
             />
-            <text x={PAD.l - 8} y={y + 4} className="axis" textAnchor="end">
+            <text
+              x={PAD.l - 8}
+              y={y + 4}
+              className="axis"
+              textAnchor="end"
+              direction="ltr"
+            >
               {formatNum(yMax * t)}
               {suffix}
             </text>

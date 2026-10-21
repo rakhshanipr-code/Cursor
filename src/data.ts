@@ -242,5 +242,5 @@ export const tomorrowShift = [
     cover:
       "مالی، طلا، گشت، غیر اخلاقی، گزارش عمومی، شرلوک، کلاهبرداری، مرکز تماس، پیام‌رسانی",
   },
-  { shift: "شب", person: "off", cover: "تعطیل" },
+  { shift: "شب", person: "تعطیل", cover: "بدون پوشش" },
 ];
